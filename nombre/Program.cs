@@ -29,18 +29,19 @@ public class Celulares
 }
 
 var celular = new Celulares();
-Celulares cl1 = new Personas();
+Celulares cl1 = new Celulares();
+
 celular.Id = 1;
 celular.Modelo = "iphone 15";
 celular.Precio = 3500000.0m;
 celular.Estado = new Estados() { Id = 1, Nombre = "Nuevo" };
-celular.SistemaOperativo = new Sistemas() { Id = 1, Nombre = "Apple" };
+celular.Sistema = new Sistemas() { Id = 1, Nombre = "Apple" };
 celular.SedesDisponibles = new List<Sedes>();
 celular.SedesDisponibles.Add(new Sedes() { Id = 1, Nombre = "Envigado" });
 celular.SedesDisponibles.Add(new Sedes() { Id = 2, Nombre = "Medellín" });
 
 foreach (var sede in celular.SedesDisponibles)
 {
-    Console.WriteLine(celular.Celulares);
+    Console.WriteLine(sede.Nombre);
 }
 
