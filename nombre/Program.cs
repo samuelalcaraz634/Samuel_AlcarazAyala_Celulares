@@ -27,7 +27,7 @@ public class Celulares
     public Sistemas Sistema= new Sistemas();
     public List<Sedes> SedesDisponibles = new List<Sedes>();
 }
-Console.WriteLine("Inventario de Celulares");
+
 var celular = new Celulares();
 Celulares cl1 = new Personas();
 celular.Id = 1;
