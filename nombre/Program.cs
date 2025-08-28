@@ -41,6 +41,6 @@ celular.SedesDisponibles.Add(new Sedes() { Id = 2, Nombre = "Medellín" });
 
 foreach (var sede in celular.SedesDisponibles)
 {
-    Console.WriteLine($"- {sede.Nombre}");
+    Console.WriteLine(celular.Celulares);
 }
 
